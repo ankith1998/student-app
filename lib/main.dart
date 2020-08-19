@@ -29,7 +29,9 @@ class app extends StatelessWidget {
                   decoration: InputDecoration(
                   hintText: "Enter student name",
                   prefixIcon: Icon(Icons.account_circle),
-                  border: OutlineInputBorder()
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50.0),
+                  ),
                 ),
                 ),
                 SizedBox(height: 20.0,),
@@ -38,7 +40,9 @@ class app extends StatelessWidget {
                   controller: sroll,
                   decoration: InputDecoration(
                   hintText: "Enter roll number",
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50.0),
+                  ),
                   prefixIcon: Icon(Icons.account_circle)
                 ),),
                 SizedBox(height: 20.0,),
@@ -47,7 +51,9 @@ class app extends StatelessWidget {
                   controller: sadd,
                   decoration: InputDecoration(
                     hintText: "Enter admission number",
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50.0),
+                    ),
                     prefixIcon: Icon(Icons.account_circle)
                   ),
                 ),
@@ -58,7 +64,9 @@ class app extends StatelessWidget {
                   decoration: InputDecoration(
                     hintText: "Enter college name",
                     prefixIcon: Icon(Icons.school),
-                    border: OutlineInputBorder()
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50.0),
+                    ),
                   ),
                 ),
                 SizedBox(height: 20.0,),
@@ -76,6 +84,16 @@ class app extends StatelessWidget {
                   },
                   color: Colors.amber,
                   child: Text("SUMBIT"),
+                ),
+                SizedBox(height: 20.0,),
+                Container(
+                  child: Center(child: Text("RESET")),
+                  width: 250.0,
+                  height: 50.0,
+                  decoration: BoxDecoration(
+                    color: Colors.cyan,
+                    borderRadius: BorderRadius.circular(50.0)
+                  ),
                 )
 
               ],
